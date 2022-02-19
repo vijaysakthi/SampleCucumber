@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="38.979144">
+<testcase classname="To test login in OrangeHRM website" name="Valid Login OrangeHRM" time="17.599511">
+<system-out><![CDATA[Given user is on login page.................................................passed
+Then user enters valid "Admin" and "admin123"...............................passed
+And click on login button...................................................passed
+Then user is navigated to home page.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To test login in OrangeHRM website" name="Invalid Login OrangeHRM" time="21.379633">
+<failure message="org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.partialLinkText: Welcome&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'VIJAY', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'&#10;Driver info: driver.version: RemoteWebDriver&#13;&#10;&#9;at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)&#13;&#10;&#9;at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)&#13;&#10;&#9;at stepDefinitions.OrangeLoginStepDefintion.user_is_navigated_to_home_page(OrangeLoginStepDefintion.java:49)&#13;&#10;&#9;at ✽.Then user is navigated to home page(LoginOrange.feature:18)&#13;&#10;"><![CDATA[Given user is on login page.................................................passed
+Then user enters valid "AdminVj" and "admin"................................passed
+And click on login button...................................................passed
+Then user is navigated to home page.........................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.partialLinkText: Welcome
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'VIJAY', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at stepDefinitions.OrangeLoginStepDefintion.user_is_navigated_to_home_page(OrangeLoginStepDefintion.java:49)
+	at ✽.Then user is navigated to home page(LoginOrange.feature:18)
+]]></failure>
+</testcase>
+</testsuite>

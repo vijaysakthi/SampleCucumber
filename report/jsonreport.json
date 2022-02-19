@@ -1,0 +1,76 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "Google search scenario",
+        "description": "",
+        "id": "this-is-to-test-google-search;google-search-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8245930300,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "user is entering google url",
+            "match": {
+              "location": "OpenUrlStepDefinitions.user_is_entering_google_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 85332800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is typing the search term \"Vijay\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Vijay",
+                  "offset": 32
+                }
+              ],
+              "location": "OpenUrlStepDefinitions.user_is_typing_the_search_term(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4526595800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "enters the return key",
+            "match": {
+              "location": "OpenUrlStepDefinitions.enters_the_return_key()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 250681400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user should see the search results",
+            "match": {
+              "location": "OpenUrlStepDefinitions.the_user_should_see_the_search_results()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "This is to test google search",
+    "description": "",
+    "id": "this-is-to-test-google-search",
+    "keyword": "Feature",
+    "uri": "featureFiles/OpenUrl.feature"
+  }
+]
